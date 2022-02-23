@@ -97,7 +97,11 @@ const IndexPage = () => (
 						<div className="uk-child-width-1-1 uk-child-width-1-2@s uk-grid-small uk-grid">
 							<div className="uk-grid-item-match uk-grid-margin ">
 								<div>
-									<a className="uk-inline-clip uk-transition-toggle uk-link-toggle" href="/menu" tabindex="0"><img alt="" src="https://res.cloudinary.com/hungryram19/image/upload/v1633067672/aj-garcia/2-drink-donuts.jpg"/>
+									<a className="uk-inline-clip uk-transition-toggle uk-link-toggle" href="/menu" tabindex="0">
+										<StaticImage
+											src="../images/2-drink-donuts.jpg"
+											placeholder="blurred"
+										/>
 									<div className="uk-overlay-default uk-transition-fade uk-position-cover"></div>
 									<div className="uk-position-center">
 										<div className="uk-overlay uk-transition-fade uk-margin-remove-first-child">
@@ -110,7 +114,11 @@ const IndexPage = () => (
 							</div>
 							<div className="uk-grid-item-match uk-grid-margin ">
 								<div>
-									<a className="uk-inline-clip uk-transition-toggle uk-link-toggle" href="/menu" tabindex="0"><img alt="" src="https://res.cloudinary.com/hungryram19/image/upload/v1633067464/aj-garcia/drink-donut2.jpg"/>
+									<a className="uk-inline-clip uk-transition-toggle uk-link-toggle" href="/menu" tabindex="0">
+									<StaticImage
+											src="../images/drink-donut2.jpg"
+											placeholder="blurred"
+										/>
 									<div className="uk-overlay-default uk-transition-fade uk-position-cover"></div>
 									<div className="uk-position-center">
 										<div className="uk-overlay uk-transition-fade uk-margin-remove-first-child">
