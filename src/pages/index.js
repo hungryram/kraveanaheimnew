@@ -14,10 +14,10 @@ const IndexPage = () => (
 		<div className="uk-width-1-1">
 			<div className="uk-container uk-container-large">
                 <div className="uk-width-2xlarge">
-					<div data-uk-scrollspy="cls:uk-animation-slide-top-small">
+					<div>
 						<h1 data-uk-parallax="y: -200; opacity: 1,0,0,0;" className="uk-heading-large">KRAVE <span className="uk-display-block uk-margin-large-left">NUTRITION</span></h1>
 					</div>
-					<div data-uk-scrollspy="uk-animation-slide-bottom-small">
+					<div>
 					<div className="hero__body" data-uk-parallax="y: 200; opacity: 1,0,0,0;">
 						<p className="uk-text-bold uk-margin-medium uk-text-italic">SMART — FAST — NUTRITION</p>
 						<a href="/menu" className="uk-button uk-button-primary">View the Menu</a>
@@ -66,12 +66,18 @@ const IndexPage = () => (
 						<div className="uk-child-width-1-2 uk-grid-match uk-grid">
 							<div>
 								<div className="uk-panel uk-margin-large-top">
-									<img src="https://res.cloudinary.com/hungryram19/image/upload/v1633057485/aj-garcia/krave-nutrition-drink.jpg"/>
+								<StaticImage
+										src="../images/krave-nutrition-drink.jpg"
+										alt="Krave Nutrition Drink"
+										/>								
 								</div>
 							</div>
 							<div>
 								<div className="uk-panel">
-									<img src="https://res.cloudinary.com/hungryram19/image/upload/v1633058487/aj-garcia/pumpkin-spice.jpg"/>
+									<StaticImage
+										src="../images/pumpkin-spice.jpg"
+										alt="Krave Nutrition Pumpkin Spice shake"
+										/>
 								</div>
 							</div>
 						</div>
