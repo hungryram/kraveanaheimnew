@@ -6,12 +6,21 @@ module.exports = {
   plugins: [
     "gatsby-plugin-image", 
     "gatsby-plugin-react-helmet", 
-    "gatsby-plugin-sitemap", {
+    "gatsby-plugin-sitemap", 
+    {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/krave-favicon.png"
+      icon: `src/images/krave-favicon.png`,
+      name: `Krave Nutritrion`,
+      short_name: `Krave Nutritrion`,
+      start_url: `/`,
+      theme_color: `#36cde6`,
+      display: `standalone`,
+      lang: `en`,
+      description: `The best nutrition drinks in Anaheim`,
     }
-  }, 
+  },
+  `gatsby-plugin-offline`,
   "gatsby-transformer-remark", 
   "gatsby-plugin-sharp", 
   "gatsby-transformer-sharp", 
