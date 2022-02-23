@@ -20,13 +20,13 @@ export default function Footer() {
                     <div className="uk-grid-large" data-uk-grid>
                         <div className="uk-width-1-2@s">
                             <div className="uk-margin">
-                                <a className="el-link" href="https://demo.yootheme.com/wordpress/themes/yoko/?page_id=1">
+                                <Link to="https://demo.yootheme.com/wordpress/themes/yoko/?page_id=1">
                                     <StaticImage
                                         src="../images/krave-logo-full.png"
                                         alt="Krave Nutrition Anaheim Logo"
                                         width={160}
                                     />
-                                </a>
+                                </Link>
 
                             </div>
 
@@ -48,12 +48,14 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="uk-width-1-4@s">
+                            <div className="editable">
                             <h2 className="uk-h3">Hours</h2>
                             <p>
                                 Mon-Fri: 7am-4pm<br/>
                                 Sat: 8am-2pm<br/>
                                 Sun: Closed
                             </p>
+                            </div>
                         </div>
                     </div><div className="uk-grid-column-large uk-margin-xlarge uk-grid" uk-grid>
                         <div className="uk-grid-item-match uk-flex-bottom uk-width-1-2@s">
