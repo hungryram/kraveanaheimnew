@@ -4,7 +4,8 @@ module.exports = {
     siteUrl: `https://www.kraveanaheim.com`
   },
   plugins: [
-    "gatsby-plugin-image", 
+    "gatsby-plugin-image",
+    "gatsby-plugin-netlify",
     "gatsby-plugin-react-helmet", 
     "gatsby-plugin-sitemap", 
     {
