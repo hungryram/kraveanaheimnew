@@ -3,13 +3,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageBanner from "../components/pagebanner"
 import Seo from "../components/seo"
+import BasicLitCombo from "../images/1.jpg"
+import Tea from "../images/2.jpg"
+import Shakes from "../images/3.jpg"
+import Bowls from "../images/4.jpg"
 
 export default function Menu({ data }) {
     return (
         <Layout>
             <Seo 
-                title="Krave Nutrition Shake Menu | Krave Nutrition"
-                description="View delicious nutritional shake menu at our Anaheim location. Choose from power teas and shake add-ons."
+                title="Krave Nutrition Menu | Krave Nutrition"
+                description="View delicious nutritional shake menu at our Anaheim location. We serve healthy meal replacement shakes, protein bowls, protein coffee, and power teas"
             />
             <PageBanner pageTitle="Krave Nutrition Menu"/>
             <div className="uk-section">
@@ -19,10 +23,10 @@ export default function Menu({ data }) {
                             <div className="uk-margin-medium-bottom">
                                 <p>You can view our menu through image format with the links below or using the web format below.</p>
                                 <ul className="uk-list">
-                                    <li data-uk-lightbox><a href="https://res.cloudinary.com/hungryram19/image/upload/v1633193931/aj-garcia/power-basic-combo.png" className="accent">Choosing Power or Basic Combo</a></li>
-                                    <li data-uk-lightbox><a href="https://res.cloudinary.com/hungryram19/image/upload/v1633136467/aj-garcia/power-tea-menu.png" className="accent">Power Tea Menu</a></li>
-                                    <li data-uk-lightbox><a href="https://res.cloudinary.com/hungryram19/image/upload/v1633136469/aj-garcia/shake-menu.png" className="accent">Shake Menu</a></li>
-                                    <li data-uk-lightbox><a href="https://res.cloudinary.com/hungryram19/image/upload/v1633136471/aj-garcia/hot-menu.png" className="accent">Hot Menu</a></li>
+                                    <li data-uk-lightbox><a href={BasicLitCombo} className="accent">Choosing Power or Basic Combo</a></li>
+                                    <li data-uk-lightbox><a href={Tea} className="accent">Power Tea Menu</a></li>
+                                    <li data-uk-lightbox><a href={Shakes} className="accent">Shake Menu</a></li>
+                                    <li data-uk-lightbox><a href={Bowls} className="accent">Protein Coffee/Protein Bowls</a></li>
                                 </ul>
                             </div>
                             <div className="step__one">
@@ -31,7 +35,7 @@ export default function Menu({ data }) {
                                     <li>
                                         <a className="uk-accordion-title uk-light" href="#">Nutritional Shakes</a>
                                         <div className="uk-accordion-content uk-margin-medium-top">
-                                            <p className="uk-text-bold">Under 200 calories, 17+ grams of protein, 45 essential vitatmins and minerals. Keto friendly.</p>
+                                            <p className="uk-text-bold">170 calories, 17g of protein, 24 essential vitamins and minerals. Keto friendly.</p>
                                             <div className="uk-column-1-2">
                                                 <ul className="uk-list uk-list-decimal">
 
@@ -93,7 +97,7 @@ export default function Menu({ data }) {
                                     <li>
                                         <a className="uk-accordion-title" href="#">Basic Teas</a>
                                         <div className="uk-accordion-content uk-margin-medium-top">
-                                            <p className="uk-text-bold">Includes aloe, tea, liftoff</p>
+                                            <p className="uk-text-bold">Iced or Hot</p>
                                             <div className="uk-column-1-2">
                                                 <ul className="uk-list uk-list-hyphen">
 
@@ -111,7 +115,7 @@ export default function Menu({ data }) {
                                         </div>
                                     </li>
                                 </ul>
-                                <ul data-uk-accordion>
+                                {/* <ul data-uk-accordion>
                                     <li>
                                         <a className="uk-accordion-title uk-light" href="#">Tea add-ons</a>
                                         <div className="uk-accordion-content uk-margin-medium-top">
@@ -127,6 +131,48 @@ export default function Menu({ data }) {
                                                             <strong className="uk-text-uppercase">{node.name}</strong><br />
                                                             <span>{node.ingredients}</span>
                                                         </li>                                                        
+                                                        )
+                                                    })}
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul> */}
+                            </div>
+                            <div className="uk-margin-medium-top">
+                            <h3>Protein Coffee and Bowls</h3>
+
+                            <ul data-uk-accordion>
+                                    <li>
+                                        <a className="uk-accordion-title uk-light" href="#">Protein Coffee</a>
+                                        <div className="uk-accordion-content uk-margin-medium-top">
+                                            <p>Cold or Hot.</p>
+                                            <div className="uk-column-1-2">
+                                                <ul className="uk-list uk-list-hyphen">
+
+                                                {data.markdownRemark.frontmatter.coffee.map((node) => {
+                                                        return (
+                                                            <li><strong className="uk-text-uppercase">{node.name}</strong></li>
+                                                        )
+                                                    })}
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul data-uk-accordion>
+                                    <li>
+                                        <a className="uk-accordion-title uk-light" href="#">Protein Bowls</a>
+                                        <div className="uk-accordion-content uk-margin-medium-top">
+                                            <p>350-400 calories, 24g protein, 24 essential vitamins & minerals, meal replacement</p>
+                                            <div className="uk-column-1-2">
+                                                <ul className="uk-list uk-list-hyphen">
+
+                                                {data.markdownRemark.frontmatter.bowls.map((node) => {
+                                                        return (
+                                                            <li><strong className="uk-text-uppercase">{node.name}</strong></li>
                                                         )
                                                     })}
 
@@ -161,6 +207,12 @@ export const MenuData = graphql`
         }
         shake_add_ons {
           name
+        }
+        bowls {
+            name
+        }
+        coffee {
+            name
         }
         shake_menu {
           shakes {

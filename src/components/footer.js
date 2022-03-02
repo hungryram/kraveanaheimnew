@@ -20,7 +20,7 @@ export default function Footer() {
                     <div className="uk-grid-large" data-uk-grid>
                         <div className="uk-width-1-2@s">
                             <div className="uk-margin">
-                                <Link to="https://demo.yootheme.com/wordpress/themes/yoko/?page_id=1">
+                                <Link to="/">
                                     <StaticImage
                                         src="../images/krave-logo-full.png"
                                         alt="Krave Nutrition Anaheim Logo"

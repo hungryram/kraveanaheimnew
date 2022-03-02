@@ -1,4 +1,15 @@
 ---
+bowls:
+- name: Dole Whip
+- name: Coffee Toffee
+- name: Chocolate Banana
+- name: funfetti
+- name: Cinnamon Toast Crunch
+coffee:
+- name: Salted Caramel
+- name: Hazelnut Mocha
+- name: Mocha Blend
+- name: House Blend
 basic_tea:
   b_tea:
   - name: Raspberry
@@ -12,38 +23,29 @@ body: ""
 heading: Delicious Shake Menu
 power_tea:
   p_teas:
-  - ingredients: Strawberry, Blue Blast, Watermelon, Mandarin, Peach Tea, Lemon-Lime
+  - ingredients: Strawberry, Blue Blast, Watermelon, Peach Tea, Lemon-Lime
     name: Gusher
-  - ingredients: Rainbow Candy, Pineapple, Mandarin, Raspberry Tea, Pomegranate
-    name: Hawaiian Breeze
-  - ingredients: Cherry, Cranberry, Raspberry Tea, Pomegranate
+  - ingredients: Cherry, Cranberry Aloe, Raspberry Tea, Pomegranate
     name: Shirley Temple
-  - ingredients: Coconut, Pineapple, Strawberry, Mandarin, Lemon Tea, Orange
+  - ingredients: Coconut, Pineapple, Strawberry, Lemon Tea, Orange
     name: Coconut Pineapple
-  - ingredients: Blue Blast, Grape, Mandarin, Lemon Tea, Lemon-Lime
+  - ingredients: Blue Blast, Grape, Mandarin Aloe, Raspberry Tea, Lemon-Lime
     name: Hulk Smash
   - ingredients: Peach, Mandarin, Peach Tea, Tropical
     name: Peachy Peach
-  - ingredients: Coconut, Pineapple, Strawberry, Mandarin, Lemon Tea, Orange
-    name: Werd Up
-  - ingredients: Cucumber, Watermelon, Mandarin, Peach Tea, Lemon-Lime
+  - ingredients: Cucumber Lime, Mandarin, Watermelon, Peach Tea, Lemon-Lime
     name: Cucumber Lime
-  - ingredients: Watermelon, Pineapple, Coconut, Mango, Lemon Tea, Tropical
-    name: Bahama Mama
-  - ingredients: Strawberry, Huckleberry, Mango, Raspberry Tea, Pomegranate
-    name: Huckleberry
-  - ingredients: Blue Blast, Strawberry, Watermelon, Grape, Cranberry, Raspberry Tea,
-      Pomegranate
+  - ingredients: Blue Blast, Strawberry, Watermelon, Grape, Raspberry Tea, Pomegranate
     name: Black Diamond
-  - ingredients: Mango, Strawberry, Mandarin, Lemon Tea, Orange
-    name: Iron Man
+  - ingredients: Mango, Strawberry, Mandarin Aloe, Lemon Tea, Orange
+    name: IronMan
+  - ingredients: Strawberry Kiwi, Mandarin Aloe, Lemon Tea, Lemon Lime Liftoff
+    name: Strawberry Kiwi
 shake_add_ons:
-- name: Extra Protein $2
-- name: Fiber $2
-- name: Probiotic $2
-- name: PB2 $0.50
-- name: Rebuild Strength $3
-- name: Enhanced Protein $3
+- name: Fiber
+- name: Probiotic
+- name: PB2
+- name: Oats
 shake_menu:
   shakes:
   - name: French Vanilla
@@ -53,35 +55,36 @@ shake_menu:
   - name: ' Dulce De Leche'
   - name: Orange Cream
   - name: Mint Chip
-  - name: Cafe Latte
-  - name: Wild Berry
+  - name: Salted Caramel Latte
+  - name: Dole Whip
   - name: Pina Colada
-  - name: Allergen Free
-  - name: Pralines & Creme
-  - name: Cinnabon
+  - name: Tot Special
+  - name: Pralines & Cream
+  - name: Funfetti
   - name: Chocolate Milk
-  - name: Fudgsicle
+  - name: Cookie Dough
   - name: Chocolate Caramel Cheesecake
   - name: Peanut butter Cup
   - name: Snickers
   - name: Wedding Cake
   - name: Snickerdoodle
-  - name: Apple Crumbler
+  - name: Apple Crumbler + $2
   - name: Samoa
   - name: Nutter Butter
   - name: Crunch Berry
   - name: Elvis
   - name: Banana Bread
   - name: Cinnamon Toast Crunch
-  - name: Apple Pie
+  - name: Coffee Toffee
   - name: Lemon Coconutty
-  - name: Blueberry Muffin
+  - name: Red Velvet
   - name: Fruity Pebbles
   - name: S'mores
   - name: Pay Day
   - name: Banana Split
-  - name: Butter Beer
+  - name: Garcia Special
   - name: White Chocolate Raspberry Cheesecake
+  - name: Cookie Monster
 shakes: []
 tea_add_ons:
 - ingredients: Lemon Lime, Pomegranate, Tropical Fruit, Orange

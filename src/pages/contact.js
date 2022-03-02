@@ -38,8 +38,8 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="uk-width-1-2@s">
+                        <h2>Send an email</h2>
                             <div className="uk-card">
-                                <h3>Send an email</h3>
                                 <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" className="uk-grid-small" data-uk-grid action="/thank-you">
                                 <input type="hidden" name="form-name" value="contact"/>
                                     <input name="bot-field" type="hidden" />
