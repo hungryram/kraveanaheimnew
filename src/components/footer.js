@@ -42,7 +42,7 @@ export default function Footer() {
                         <div className="uk-width-1-4@s">
                             <h2 className="uk-h3">Contact</h2>
                             <ul className="uk-list footer__icons">
-                                <li class="uk-margin-medium-bottom"><a href={`mailto: ${info.office}`}><FaPhoneAlt /> {info.office}</a></li>
+                                <li class="uk-margin-medium-bottom"><a href={`tel: ${info.office}`}><FaPhoneAlt /> {info.office}</a></li>
                                 <li class="uk-margin-medium-bottom"><a href={`mailto: ${info.email}`}><FaRegEnvelope /> {info.email}</a></li>
                                 <li class="uk-margin-medium-bottom"><a href="https://goo.gl/maps/LQb3gUybZSZTDFfR9" target="_blank"><FaLocationArrow /> {info.address}, {info.city}, {info.state} {info.zip_code}</a></li>
                             </ul>
