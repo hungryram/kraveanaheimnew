@@ -58,24 +58,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-            <div className="uk-section">
-                <div className="uk-container uk-container-large">
-                    <div className="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" data-uk-grid>
-                        <div className="uk-card-media-left">
-                        <StaticImage
-                                src="../images/aj.jpg"
-                                alt="AJ Garcia of Krave Nutrition"
-                            />
-                        </div>
-                        <div>
-                            <div className="uk-card-body">
-                                <h3 className="uk-heading-small">Alejandro Garcia</h3>
-                                <p>My name is Alejandro Garcia and I’m 27 years. Former professional soccer player, I played at Orlando City for 1 year and then took my career to Mexico for 4 years. My time as a professional I had no idea about nutrition, so imagine what your typical person knows about nutrition. I gained 25 lbs of lean muscle and it inspired me to show others what is possible with a balanced diet.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </Layout>
     )
 }
