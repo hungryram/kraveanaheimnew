@@ -46,40 +46,40 @@ export default function Header() {
 
 
       <div>
-                <nav className="uk-navbar uk-container uk-hidden@m uk-box-shadow-small">
-                    <div className="uk-navbar-left">
-                        <a href="/">
-                            <StaticImage
-                              src="../images/krave-logo-full.png"
-                              placeholder="blurred"
-                              alt="Krave Nutrition Anaheim Logo"
-                              width={100}
-                            />
-                        </a>
-                    </div>
-                    <div className="uk-navbar-right">
-                        <a className="uk-navbar-toggle" data-uk-toggle="target: #mobile-menu">
-                            <RiMenu5Line />
-                        </a>
-                    </div>
-                </nav>
+        <nav className="uk-navbar uk-container uk-hidden@m uk-box-shadow-small">
+          <div className="uk-navbar-left">
+            <a href="/">
+              <StaticImage
+                src="../images/krave-logo-full.png"
+                placeholder="blurred"
+                alt="Krave Nutrition Anaheim Logo"
+                width={100}
+              />
+            </a>
+          </div>
+          <div className="uk-navbar-right">
+            <a className="uk-navbar-toggle" data-uk-toggle="target: #mobile-menu">
+              <RiMenu5Line />
+            </a>
+          </div>
+        </nav>
 
-                <div id="mobile-menu" data-uk-offcanvas>
-                    <div className="uk-offcanvas-bar uk-flex uk-flex-column">
-                        <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-dark" data-uk-nav>
-                            <li>
+        <div id="mobile-menu" data-uk-offcanvas>
+          <div className="uk-offcanvas-bar uk-flex uk-flex-column">
+            <ul className="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-dark" data-uk-nav>
+              <li>
 
-                            </li>
-                            <li className="uk-nav-header"></li>
-                            <li><Link to="/" className="uk-h3">Home</Link></li>
-                            <li><Link to="/menu" className="uk-h3">Menu</Link></li>
-                            <li><Link to="/about" className="uk-h3">About</Link></li>
-                            <li><Link to="/contact" className="uk-h3">Contact</Link></li>
-                        </ul>
-                    </div>
-                </div>
+              </li>
+              <li className="uk-nav-header"></li>
+              <li><Link to="/" className="uk-h3">Home</Link></li>
+              <li><Link to="/menu" className="uk-h3">Menu</Link></li>
+              <li><Link to="/about" className="uk-h3">About</Link></li>
+              <li><Link to="/contact" className="uk-h3">Contact</Link></li>
+            </ul>
+          </div>
+        </div>
 
-            </div>
+      </div>
     </>
   )
 }
